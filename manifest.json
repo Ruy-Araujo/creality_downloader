@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Creality Cloud Downloader",
+  "version": "1.0.4",
+  "description": "Exports authorized Creality Cloud models into a single ZIP file.",
+  "minimum_chrome_version": "116",
+  "permissions": ["activeTab", "scripting", "downloads", "offscreen", "storage"],
+  "host_permissions": [
+    "https://www.crealitycloud.com/*",
+    "https://*.crealitycloud.com/*"
+  ],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "Creality Cloud Downloader", "default_popup": "popup.html" },
+  "content_scripts": [{
+    "matches": ["https://www.crealitycloud.com/*/model-detail/*", "https://www.crealitycloud.com/model-detail/*"],
+    "js": ["cache-lifetime.js"],
+    "run_at": "document_start"
+  }]
+}

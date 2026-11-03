@@ -1,0 +1,23 @@
+:root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+body { width: 330px; margin: 0; background: #0b1020; color: #edf2ff; }
+main { padding: 18px; }
+header { display: flex; gap: 11px; align-items: center; margin-bottom: 18px; }
+.logo { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 9px; background: #3678f6; color: white; font-size: 25px; font-weight: 800; }
+h1 { margin: 0; font-size: 15px; line-height: 1.25; }
+#state { margin: 3px 0 0; color: #aebbd4; font-size: 12px; }
+progress { width: 100%; height: 8px; accent-color: #5f99ff; }
+.detail { min-height: 37px; max-height: 100px; margin: 12px 0 12px; overflow: auto; color: #c2cce0; font-size: 12px; line-height: 1.45; overflow-wrap: anywhere; white-space: pre-wrap; }
+.error-log { margin: 0 0 16px; }
+.error-log h2 { margin: 0 0 7px; color: #ffb4ae; font-size: 12px; }
+.table-wrap { max-height: 142px; overflow: auto; border: 1px solid #3d2831; border-radius: 7px; }
+table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 11px; line-height: 1.35; }
+th, td { padding: 7px 8px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+th { position: sticky; top: 0; background: #251923; color: #ffcbc6; font-weight: 700; }
+th:first-child, td:first-child { width: 37%; }
+td { border-top: 1px solid #30232a; color: #cfd5e2; }
+td:last-child { color: #ffb4ae; }
+button { width: 100%; border: 0; border-radius: 8px; padding: 10px 12px; background: #5f99ff; color: #071122; font-size: 13px; font-weight: 700; cursor: pointer; }
+button:hover { background: #80afff; }
+.secondary { margin-top: 8px; background: transparent; border: 1px solid #44516a; color: #dce5f8; }
+.secondary:hover { background: #1a2439; }
+.hint { min-height: 16px; margin: 12px 0 0; color: #8491a9; font-size: 11px; line-height: 1.35; }

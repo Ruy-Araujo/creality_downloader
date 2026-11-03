@@ -1,0 +1,4 @@
+node_modules/
+dist/creality-cloud-downloader/
+*.log
+.DS_Store

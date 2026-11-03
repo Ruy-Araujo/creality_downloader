@@ -1,0 +1,13 @@
+{
+  "name": "creality-cloud-downloader",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "package": "bash scripts/package.sh"
+  },
+  "devDependencies": {
+    "@zip.js/zip.js": "2.24.0"
+  }
+}

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="popup.css"><title>Creality Cloud Downloader</title></head>
+  <body>
+    <main>
+      <header><span class="logo">↓</span><div><h1>Creality Cloud Downloader</h1><p id="state">Loading status…</p></div></header>
+      <progress id="progress" max="1" value="0"></progress>
+      <p id="detail" class="detail"></p>
+      <section id="error-log" class="error-log" hidden aria-labelledby="error-log-title">
+        <h2 id="error-log-title">File errors</h2>
+        <div class="table-wrap"><table><thead><tr><th>File</th><th>Error</th></tr></thead><tbody id="error-rows"></tbody></table></div>
+      </section>
+      <button id="primary" type="button">Export current model</button>
+      <button id="cancel" type="button" class="secondary" hidden>Cancel export</button>
+      <p id="hint" class="hint"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
